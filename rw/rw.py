@@ -1,5 +1,5 @@
 import os
-fp =open("C:\\py test\\a.txt","r")
+fp =open("C:\\py test\\rw\\a.txt","r")
 tmp= fp.readlines()
 for i in tmp:
     print(i)
