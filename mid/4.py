@@ -19,9 +19,12 @@ dpsname5= ['輪機',"海事","航運"]
 nkust_dc={"燕巢校區":dpsname1,"建工校區":dpsname2,"第一校區":dpsname3,"楠梓校區":dpsname4,"旗津校區":dpsname5}
 
 
-for i in nkust_dc:
-    nkust_dc[i].append(Campus(i))
-    
+for key,value in nkust_dc.items():
+    nkust.cps.append(Campus(key))
+    m = len(nkust.cps)
+    for i in value:
+        nkust.cps[m-1].dep.append(Department(i))
+
 
 
 
