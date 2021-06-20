@@ -21,9 +21,8 @@ nkust_dc={"燕巢校區":dpsname1,"建工校區":dpsname2,"第一校區":dpsname
 
 for key,value in nkust_dc.items():
     nkust.cps.append(Campus(key))
-    m = len(nkust.cps)
     for i in value:
-        nkust.cps[m-1].dep.append(Department(i))
+        nkust.cps[len(nkust.cps)-1].dep.append(Department(i))
 
 
 

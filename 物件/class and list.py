@@ -8,4 +8,3 @@ for w in range(8):
 truck.en = 2000
 
 
-
